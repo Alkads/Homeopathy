@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. Nalini - Advanced Homoeopathy and Counselling">
+  <title>Dr. Nalini - Advanced Homoeopathy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about_homoeopathy.html">About Homoeopathy</a>
+    <a href="about_me.html">About me</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Dr. Nalini</h1>
+      <h2>Advanced Homoeopathy & Counselling</h2>
+      <div class="hero-quote">
+        "Healing is not just about medicine, it's about understanding the whole person"
+      </div>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+        <a href="about_me.html" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image-container">
+      <img src="./Home.jpg" alt="Dr. Nalini's Homoeopathy Clinic" class="hero-image">
+    </div>
+  </div>
+
+  <div class="features-section">
+    <div class="feature-card">
+      <i class="fas fa-leaf"></i>
+      <h3>Holistic Treatment</h3>
+      <p>Comprehensive approach to healing that considers the whole person - body, mind, and spirit.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-flask"></i>
+      <h3>Advanced Homoeopathy</h3>
+      <p>Latest research-based homoeopathic methods for more accurate and effective treatment.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-heart"></i>
+      <h3>Professional Counselling</h3>
+      <p>Expert psychological support to help you navigate life's challenges.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>Email: Nalinivjrn@gmail.com</p>
+        <p>Tel: +91 7744922985</p>
+        <div class="social-icons">
+          <a href="#" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <p><a href="about_homoeopathy.html">About Homoeopathy</a></p>
+        <p><a href="about_me.html">About Me</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Office Hours</h4>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script>
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

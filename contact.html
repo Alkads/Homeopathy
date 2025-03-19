@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Dr. Nalini - Advanced Homoeopathy and Counselling">
+  <title>Contact - Dr. Nalini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about_homoeopathy.html">About Homoeopathy</a>
+    <a href="about_me.html">About me</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <div class="container">
+    <div class="header contact-header">
+      <div class="header-with-image">
+        <div class="header-content">
+          <h1>Contact Us</h1>
+          <p class="contact-intro">We're here to help you on your journey to better health through holistic homoeopathic treatment.</p>
+        </div>
+        <div class="image-section">
+          <img src="./Contact us.jpg" alt="Contact Dr. Nalini" class="content-image">
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info-card">
+        <div class="info-section">
+          <h3><i class="fas fa-calendar-alt"></i> Book an Appointment</h3>
+          <form class="appointment-form" id="appointmentForm">
+            <div class="form-group">
+              <label for="appointment-date">Select Date</label>
+              <input type="date" id="appointment-date" name="appointment-date" required>
+              <small class="error-message" id="dateError" style="color: #e74c3c; display: none;">Weekend appointments are not available</small>
+            </div>
+            <div class="form-group">
+              <label for="appointment-time">Select Time</label>
+              <select id="appointment-time" name="appointment-time" required>
+                <option value="">Choose a time slot</option>
+              </select>
+              <small class="help-text" style="color: #666; font-size: 0.85em;">Available time slots will be shown based on the selected date</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+          </form>
+        </div>
+
+        <div class="info-section">
+          <h3><i class="fas fa-phone-alt"></i> Call Us</h3>
+          <p>Tel: +91 7744922985</p>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+             Saturday: 9:00 AM - 2:00 PM<br>
+             Sunday: Closed</p>
+        </div>
+
+        <div class="info-section">
+          <h3><i class="fas fa-envelope"></i> Email Us</h3>
+          <p>Nalinivjrn@gmail.com</p>
+          <div class="social-links">
+            <a href="#" class="social-link" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <h3>Send us a Message</h3>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>Email: Nalinivjrn@gmail.com</p>
+        <p>Tel: +91 7744922985</p>
+        <div class="social-icons">
+          <a href="#" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <p><a href="about_homoeopathy.html">About Homoeopathy</a></p>
+        <p><a href="about_me.html">About Me</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Office Hours</h4>
+        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 9:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script>
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Appointment Booking System
+    document.addEventListener('DOMContentLoaded', function() {
+      const appointmentForm = document.getElementById('appointmentForm');
+      const dateInput = document.getElementById('appointment-date');
+      const timeSelect = document.getElementById('appointment-time');
+      const dateError = document.getElementById('dateError');
+
+      // Set min date to today
+      const today = new Date();
+      const tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      dateInput.min = tomorrow.toISOString().split('T')[0];
+
+      // Mock database of booked appointments (in real application, this would come from a server)
+      const bookedSlots = {
+        '2024-02-20': ['09:00', '14:00'],
+        '2024-02-21': ['10:00', '15:00'],
+        // Add more booked slots as needed
+      };
+
+      // All available time slots
+      const allTimeSlots = [
+        { value: '09:00', label: '09:00 AM' },
+        { value: '10:00', label: '10:00 AM' },
+        { value: '11:00', label: '11:00 AM' },
+        { value: '12:00', label: '12:00 PM' },
+        { value: '14:00', label: '02:00 PM' },
+        { value: '15:00', label: '03:00 PM' },
+        { value: '16:00', label: '04:00 PM' },
+        { value: '17:00', label: '05:00 PM' }
+      ];
+
+      // Update available time slots based on selected date
+      function updateTimeSlots(selectedDate) {
+        // Clear existing options
+        timeSelect.innerHTML = '<option value="">Choose a time slot</option>';
+        
+        // If it's a weekend, show error and return
+        const date = new Date(selectedDate);
+        if (date.getDay() === 0 || date.getDay() === 6) {
+          dateError.style.display = 'block';
+          timeSelect.disabled = true;
+          return;
+        }
+
+        // Hide error and enable time select
+        dateError.style.display = 'none';
+        timeSelect.disabled = false;
+
+        // Get booked slots for the selected date
+        const bookedSlotsForDate = bookedSlots[selectedDate] || [];
+
+        // Add available time slots
+        allTimeSlots.forEach(slot => {
+          if (!bookedSlotsForDate.includes(slot.value)) {
+            const option = document.createElement('option');
+            option.value = slot.value;
+            option.textContent = slot.label;
+            timeSelect.appendChild(option);
+          }
+        });
+      }
+
+      // Date change handler
+      dateInput.addEventListener('change', function() {
+        updateTimeSlots(this.value);
+      });
+
+      // Form submission handler
+      appointmentForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const selectedDate = dateInput.value;
+        const selectedTime = timeSelect.value;
+
+        // Add the appointment to booked slots (in real application, this would be sent to a server)
+        if (!bookedSlots[selectedDate]) {
+          bookedSlots[selectedDate] = [];
+        }
+        bookedSlots[selectedDate].push(selectedTime);
+
+        // Show confirmation message
+        alert('Appointment booked successfully for ' + selectedDate + ' at ' + 
+              allTimeSlots.find(slot => slot.value === selectedTime).label);
+        
+        // Reset form and update time slots
+        updateTimeSlots(selectedDate);
+      });
+    });
+  </script>
+</body>
+</html> 
